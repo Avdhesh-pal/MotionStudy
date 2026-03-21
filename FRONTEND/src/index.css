@@ -1,1 +1,18 @@
+@config "../tailwind.config.js";
 @import "tailwindcss";
+
+@layer base {
+	body {
+		@apply bg-richblack-900 text-richblack-5;
+	}
+}
+
+@layer components {
+	.form-style {
+		@apply rounded-lg bg-richblack-800 px-3 py-2 text-[16px] leading-[24px] text-richblack-5 shadow-[0_1px_0_0] shadow-white/20 placeholder:text-richblack-400 focus:outline-none;
+	}
+
+	.spinner {
+		@apply h-10 w-10 animate-spin rounded-full border-4 border-richblack-200 border-t-richblack-900;
+	}
+}
