@@ -21,10 +21,7 @@ const About = () => {
             Driving Innovation in Online Education for a
             <HighlightText text={"Brighter Future"} />
             <p className="mx-auto mt-3 text-center text-base font-medium text-richblack-300 lg:w-[95%]">
-              Studynotion is at the forefront of driving innovation in online
-              education. We're passionate about creating a brighter future by
-              offering cutting-edge courses, leveraging emerging technologies,
-              and nurturing a vibrant learning community.
+              Motion Study empowers learners worldwide by delivering transformative educational experiences through advanced digital platforms. We are dedicated to democratizing knowledge, embracing innovative teaching methodologies, and building an engaged ecosystem where every learner can thrive and excel.
             </p>
           </header>
           <div className="sm:h-[70px] lg:h-[150px]"></div>
@@ -51,20 +48,10 @@ const About = () => {
                 Our Founding Story
               </h1>
               <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-                Our e-learning platform was born out of a shared vision and
-                passion for transforming education. It all began with a group of
-                educators, technologists, and lifelong learners who recognized
-                the need for accessible, flexible, and high-quality learning
-                opportunities in a rapidly evolving digital world.
+                Motion Study was established by a collective of passionate educators and technology innovators who shared a common goal: to revolutionize how knowledge is delivered and accessed. Founded on the principle that quality education should be available to everyone, regardless of their location or socioeconomic background, we embarked on a mission to create a comprehensive learning ecosystem that breaks down traditional barriers.
               </p>
               <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-                As experienced educators ourselves, we witnessed firsthand the
-                limitations and challenges of traditional education systems. We
-                believed that education should not be confined to the walls of a
-                classroom or restricted by geographical boundaries. We
-                envisioned a platform that could bridge these gaps and empower
-                individuals from all walks of life to unlock their full
-                potential.
+                Drawing from our extensive background in academia and digital innovation, we identified critical gaps in the existing education model. We understood that learners deserve flexibility, interactivity, and personalized experiences. This insight sparked the creation of Motion Study—a platform designed to deliver comprehensive courses with state-of-the-art tools, real-time interaction, and measurable learning outcomes that empower students to achieve their goals and advance their careers.
               </p>
             </div>
 
@@ -82,12 +69,7 @@ const About = () => {
                 Our Vision
               </h1>
               <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-                With this vision in mind, we set out on a journey to create an
-                e-learning platform that would revolutionize the way people
-                learn. Our team of dedicated experts worked tirelessly to
-                develop a robust and intuitive platform that combines
-                cutting-edge technology with engaging content, fostering a
-                dynamic and interactive learning experience.
+                Our vision is to build a global learning platform that leverages artificial intelligence, immersive technologies, and collaborative tools to create personalized educational journeys. We aspire to develop a sophisticated ecosystem where learners can master diverse skill sets, stay ahead of industry trends, and continuously evolve in an increasingly competitive and technology-driven world.
               </p>
             </div>
             <div className="my-24 flex lg:w-[40%] flex-col gap-10">
@@ -95,7 +77,7 @@ const About = () => {
               Our Mission
               </h1>
               <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-              Our mission goes beyond just delivering courses online. We wanted to create a vibrant community of learners, where individuals can connect, collaborate, and learn from one another. We believe that knowledge thrives in an environment of sharing and dialogue, and we foster this spirit of collaboration through forums, live sessions, and networking opportunities.
+              Our mission is to democratize quality education by fostering a collaborative knowledge-sharing ecosystem. We are committed to creating meaningful connections between learners and instructors, facilitating peer-to-peer learning, and providing resources that enable continuous growth. Through interactive discussions, mentorship programs, and community-driven initiatives, we cultivate an environment where diverse perspectives converge and collective learning drives innovation.
               </p>
             </div>
           </div>
