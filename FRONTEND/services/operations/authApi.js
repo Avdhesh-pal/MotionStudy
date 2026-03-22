@@ -12,6 +12,8 @@ const {
   LOGIN_API,
   RESETPASSTOKEN_API,
   RESETPASSWORD_API,
+  REQUEST_RESET_OTP_API,
+  RESET_PASSWORD_OTP_API,
 } = endpoints
 
 export function sendOtp(email, navigate) {
@@ -188,5 +190,67 @@ export function logout(navigate) {
     localStorage.removeItem("user")
     toast.success("Logged Out")
     navigate("/")
+  }
+}
+
+// ============================= FORGOT PASSWORD FUNCTIONS =============================
+
+export function requestResetOtp(email) {
+  return async (dispatch) => {
+    const toastId = toast.loading("Loading...")
+    dispatch(setLoading(true))
+    try {
+      const response = await apiConnector("POST", REQUEST_RESET_OTP_API, {
+        email,
+      })
+
+      console.log("REQUEST RESET OTP RESPONSE............", response)
+
+      if (!response.data.success) {
+        throw new Error(response.data.message)
+      }
+
+      toast.success("OTP Sent Successfully to your email")
+      return response.data
+    } catch (error) {
+      console.log("REQUEST RESET OTP ERROR............", error)
+      toast.error(error.message || "Failed To Send OTP")
+      return null
+    } finally {
+      dispatch(setLoading(false))
+      toast.dismiss(toastId)
+    }
+  }
+}
+
+export function resetPasswordWithOtp(email, otp, password, confirmPassword, navigate) {
+  return async (dispatch) => {
+    const toastId = toast.loading("Loading...")
+    dispatch(setLoading(true))
+    try {
+      const response = await apiConnector("POST", RESET_PASSWORD_OTP_API, {
+        email,
+        otp,
+        password,
+        confirmPassword,
+      })
+
+      console.log("RESET PASSWORD WITH OTP RESPONSE............", response)
+
+      if (!response.data.success) {
+        throw new Error(response.data.message)
+      }
+
+      toast.success("Password Reset Successfully")
+      navigate("/login")
+      return response.data
+    } catch (error) {
+      console.log("RESET PASSWORD WITH OTP ERROR............", error)
+      toast.error(error.message || "Failed To Reset Password")
+      return null
+    } finally {
+      dispatch(setLoading(false))
+      toast.dismiss(toastId)
+    }
   }
 }

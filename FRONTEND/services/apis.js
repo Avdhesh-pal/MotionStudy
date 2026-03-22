@@ -7,6 +7,8 @@ export const endpoints = {
   LOGIN_API: BASE_URL + "/auth/login",
   RESETPASSTOKEN_API: BASE_URL + "/auth/reset-password-token",
   RESETPASSWORD_API: BASE_URL + "/auth/reset-password",
+  REQUEST_RESET_OTP_API: BASE_URL + "/auth/request-reset-otp",
+  RESET_PASSWORD_OTP_API: BASE_URL + "/auth/reset-password-otp",
 }
 
 // PROFILE ENDPOINTS
